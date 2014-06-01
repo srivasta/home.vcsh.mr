@@ -1,0 +1,11 @@
+[${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/bash.git]
+checkout =
+           if anon; then
+             vcsh clone https://github.com/srivasta/home.vcsh.bash.git
+           else
+             vcsh clone git@github.com:srivasta/home.vcsh.bash.git
+           fi
+update   = vcsh run bash git pull
+push     = vcsh run bash git push
+status   = vcsh run bash git status
+gc       = vcsh run bash git gc

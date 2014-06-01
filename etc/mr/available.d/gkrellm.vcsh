@@ -1,0 +1,6 @@
+[${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/gkrellm.git]
+checkout = vcsh clone ssh://ladon.golden-gryphon.com/usr/local/git/gkrellm/
+update   = vcsh run gkrellm git pull
+push     = vcsh run gkrellm git push
+status   = vcsh run gkrellm git status
+gc       = vcsh run gkrellm git gc

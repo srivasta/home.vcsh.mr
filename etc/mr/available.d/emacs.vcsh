@@ -1,0 +1,11 @@
+[${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/emacs.git]
+checkout =
+           if anon; then
+             vcsh clone https://github.com/srivasta/home.vcsh.emacs.git
+           else
+             vcsh clone git@github.com:srivasta/home.vcsh.emacs.git
+           fi
+update   = vcsh run emacs git pull
+push     = vcsh run emacs git push
+status   = vcsh run emacs git status
+gc       = vcsh run emacs git gc

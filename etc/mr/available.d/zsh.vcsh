@@ -1,0 +1,11 @@
+[${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/zsh.git]
+checkout =
+           if anon; then
+             vcsh clone https://github.com/srivasta/home.vcsh.zsh.git
+           else
+             vcsh clone git@github.com:srivasta/home.vcsh.zsh.git
+           fi
+update   = vcsh run zsh git pull
+push     = vcsh run zsh git push
+status   = vcsh run zsh git status
+gc       = vcsh run zsh git gc
