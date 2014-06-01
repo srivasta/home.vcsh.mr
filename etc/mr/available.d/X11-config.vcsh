@@ -1,0 +1,11 @@
+[${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/X11-config.git]
+checkout =
+           if anon; then
+             vcsh clone https://github.com/srivasta/home.vcsh.X11-config.git
+           else
+             vcsh clone git@github.com:srivasta/home.vcsh.X11-config.git
+           fi
+update   = vcsh run zsh git pull
+push     = vcsh run zsh git push
+status   = vcsh run zsh git status
+gc       = vcsh run zsh git gc
