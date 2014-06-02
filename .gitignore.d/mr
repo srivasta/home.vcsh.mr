@@ -16,4 +16,6 @@
 !/etc/mr/config.d/zsh.vcsh
 !/etc/mr/lib
 !/etc/mr/lib/github
+!/.gitignore.d
+!/.gitignore.d/mr
 !/.mrconfig
