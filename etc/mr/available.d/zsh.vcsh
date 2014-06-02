@@ -5,6 +5,9 @@ checkout =
            else
              vcsh clone git@github.com:srivasta/home.vcsh.zsh.git
            fi
+           test -d ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.zsh.git && \
+             mv ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.zsh.git       \
+             ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/zsh.git
 update   = vcsh run zsh git pull
 push     = vcsh run zsh git push
 status   = vcsh run zsh git status

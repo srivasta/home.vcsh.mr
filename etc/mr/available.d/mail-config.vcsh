@@ -1,0 +1,14 @@
+[${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/mail-config.git]
+checkout =
+           if anon; then
+             vcsh clone https://github.com/srivasta/home.vcsh.mail-config.git
+           else
+             vcsh clone git@github.com:srivasta/home.vcsh.mail-config.git
+           fi
+           test -d ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.mail-config.git && \
+             mv ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.mail-config.git       \
+             ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/mail-config.git
+update   = vcsh run bash git pull
+push     = vcsh run bash git push
+status   = vcsh run bash git status
+gc       = vcsh run bash git gc

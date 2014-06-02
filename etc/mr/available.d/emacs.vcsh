@@ -5,6 +5,9 @@ checkout =
            else
              vcsh clone git@github.com:srivasta/home.vcsh.emacs.git
            fi
+           test -d ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.emacs.git && \
+             mv ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.emacs.git       \
+             ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/emacs.git
 update   = vcsh run emacs git pull
 push     = vcsh run emacs git push
 status   = vcsh run emacs git status
