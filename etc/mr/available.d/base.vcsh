@@ -8,7 +8,7 @@ checkout =
            test -d ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.base.git && \
              mv ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.base.git       \
              ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/base.git
-update   = vcsh run bash git pull
-push     = vcsh run bash git push
-status   = vcsh run bash git status
-gc       = vcsh run bash git gc
+update   = vcsh run base git pull
+push     = vcsh run base git push
+status   = vcsh run base git status
+gc       = vcsh run base git gc
