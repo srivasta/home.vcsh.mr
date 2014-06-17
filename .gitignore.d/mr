@@ -7,6 +7,8 @@
 !/etc/mr/available.d/emacs.vcsh
 !/etc/mr/available.d/gkrellm.vcsh
 !/etc/mr/available.d/mail-config.vcsh
+!/etc/mr/available.d/mimedefang-filter.git
+!/etc/mr/available.d/resume.git
 !/etc/mr/available.d/X11-config.vcsh
 !/etc/mr/available.d/zsh.vcsh
 !/etc/mr/config.d
