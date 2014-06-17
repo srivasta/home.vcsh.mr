@@ -12,3 +12,4 @@ update   = vcsh run base git pull
 push     = vcsh run base git push
 status   = vcsh run base git status
 gc       = vcsh run base git gc
+tags     = vcsh run base git tag -l

@@ -1,0 +1,3 @@
+
+[/home/srivasta/src/resume]
+checkout = git clone 'ssh://ladon.golden-gryphon.com/usr/local/git/resume/' 'resume'

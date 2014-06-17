@@ -1,0 +1,2 @@
+[$HOME/src/mimedefang-filter]
+checkout = git clone 'ssh://ladon.golden-gryphon.com/usr/local/git/mimedefang-filter/' 'mimedefang-filter'

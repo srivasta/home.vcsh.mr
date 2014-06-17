@@ -8,7 +8,8 @@ checkout =
            test -d ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.X11-config.git && \
              mv ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.X11-config.git       \
              ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/X11-config.git
-update   = vcsh run zsh git pull
-push     = vcsh run zsh git push
-status   = vcsh run zsh git status
-gc       = vcsh run zsh git gc
+update   = vcsh run X11-config git pull
+push     = vcsh run X11-config git push
+status   = vcsh run X11-config git status
+gc       = vcsh run X11-config git gc
+tags     = vcsh run X11-config git tag -l

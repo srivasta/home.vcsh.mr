@@ -8,7 +8,8 @@ checkout =
            test -d ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.mail-config.git && \
              mv ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.mail-config.git       \
              ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/mail-config.git
-update   = vcsh run bash git pull
-push     = vcsh run bash git push
-status   = vcsh run bash git status
-gc       = vcsh run bash git gc
+update   = vcsh run mail-config git pull
+push     = vcsh run mail-config git push
+status   = vcsh run mail-config git status
+gc       = vcsh run mail-config git gc
+tags     = vcsh run mail-config git tag -l

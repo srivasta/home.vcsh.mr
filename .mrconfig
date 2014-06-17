@@ -1,6 +1,7 @@
 [DEFAULT]
 git_gc   = git gc "$@"
 git_tags = git tag -l
+git_status = git status
 jobs= 5
 lib=
          include_files(){

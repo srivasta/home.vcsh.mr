@@ -4,3 +4,4 @@ update   = vcsh run gkrellm git pull
 push     = vcsh run gkrellm git push
 status   = vcsh run gkrellm git status
 gc       = vcsh run gkrellm git gc
+tags     = vcsh run gkrellm git tags -l
