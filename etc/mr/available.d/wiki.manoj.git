@@ -1,0 +1,2 @@
+[$HOME/src/wiki.manoj]
+checkout = git clone 'ssh://ladon.golden-gryphon.com/~srivasta/src/barewiki.git' 'wiki.manoj'
