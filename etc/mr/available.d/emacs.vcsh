@@ -8,6 +8,8 @@ checkout =
            test -d ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.emacs.git && \
              mv ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.emacs.git       \
              ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/emacs.git
+           perl -pli -e 's{.gitignore.d/home.vcsh.}{.gitignore.d/}msx'             \
+             ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/emacs.git/config
 update   = vcsh run emacs git pull
 push     = vcsh run emacs git push
 status   = vcsh run emacs git status

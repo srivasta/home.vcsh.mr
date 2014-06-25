@@ -8,6 +8,8 @@ checkout =
            test -d ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.zsh.git && \
              mv ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/home.vcsh.zsh.git       \
              ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/zsh.git
+           perl -pli -e 's{.gitignore.d/home.vcsh.}{.gitignore.d/}msx'             \
+             ${XDG_CONFIG_HOME:-$HOME/etc}/vcsh/repo.d/zsh.git/config
 update   = vcsh run zsh git pull
 push     = vcsh run zsh git push
 status   = vcsh run zsh git status
